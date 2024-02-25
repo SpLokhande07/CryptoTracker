@@ -19,25 +19,9 @@ struct HomeView: View {
             
             //content layer
             VStack{
-                HStack{
-                    CircleButtonView(iconName: showPorfolio ? "plus": "info").animation(.none)
-                    Spacer()
-                    Text(showPorfolio ? "Portfolio" : "Live Prices")
-                        .font(.headline)
-                        .fontWeight(.heavy)
-                        .foregroundColor(Color.theme.accent)
-                        .animation(.none)
-                    Spacer()
-                    CircleButtonView(iconName: "chevron.right")
-                        .rotationEffect(Angle(degrees: showPorfolio ? 180 : 0))
-                        .onTapGesture {
-                            withAnimation(.spring()){
-                                showPorfolio.toggle()
-                            }
-                        }
-                }
-                Text("Header")
-                Spacer(minLength: 0)
+               homeHeader
+                Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
+                
             }
             
         }
@@ -48,3 +32,32 @@ struct HomeView: View {
     NavigationView{
         HomeView().navigationBarHidden(true)
 }}
+
+
+extension HomeView {
+    
+    
+    
+    private var homeHeader: some View{
+        HStack{
+            CircleButtonView(iconName: showPorfolio ? "plus": "info").animation(.none)
+                .background(
+                CircleButtonAnimationView(animate: $showPorfolio))
+            Spacer()
+            Text(showPorfolio ? "Portfolio" : "Live Prices")
+                .font(.headline)
+                .fontWeight(.heavy)
+                .foregroundColor(Color.theme.accent)
+                .animation(.none)
+            Spacer()
+            CircleButtonView(iconName: "chevron.right")
+                .rotationEffect(Angle(degrees: showPorfolio ? 180 : 0))
+                .onTapGesture {
+                    withAnimation(.spring()){
+                        showPorfolio.toggle()
+                    }
+                }
+        }
+        .padding()
+    }
+}
