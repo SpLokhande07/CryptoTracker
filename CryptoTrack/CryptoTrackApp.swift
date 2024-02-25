@@ -11,7 +11,11 @@ import SwiftUI
 struct CryptoTrackApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            //            ContentView()
+            NavigationView{
+                HomeView().navigationBarHidden(true)
+            }
         }
     }
 }
