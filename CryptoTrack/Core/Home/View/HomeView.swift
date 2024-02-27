@@ -15,15 +15,11 @@ struct HomeView: View {
         ZStack{
             // background layer
             Color.theme.background.ignoresSafeArea()
-            
-            
             //content layer
             VStack{
                homeHeader
                 Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
-                
             }
-            
         }
     }
 }
