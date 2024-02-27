@@ -17,7 +17,7 @@ struct HomeView: View {
             Color.theme.background.ignoresSafeArea()
             VStack{
                homeHeader
-                Spacer(minLength: null)
+                Spacer(minLength: nil)
             }
         }
     }
@@ -32,24 +32,23 @@ struct HomeView: View {
 extension HomeView {
     
     
-    
     private var homeHeader: some View{
         HStack{
-            CircleButtonView(iconName: showPorfolio ? "plus": "info").animation(.none)
+            CircleButtonView(iconName: showPortfolio ? "plus": "info").animation(.none)
                 .background(
-                CircleButtonAnimationView(animate: $showPorfolio))
+                CircleButtonAnimationView(animate: $showPortfolio))
             Spacer()
-            Text(showPorfolio ? "Portfolio" : "Live Prices")
+            Text(showPortfolio ? "Portfolio" : "Live Prices")
                 .font(.headline)
                 .fontWeight(.heavy)
                 .foregroundColor(Color.theme.accent)
                 .animation(.none)
             Spacer()
             CircleButtonView(iconName: "chevron.right")
-                .rotationEffect(Angle(degrees: showPorfolio ? 180 : 0))
+                .rotationEffect(Angle(degrees: showPortfolio ? 180 : 0))
                 .onTapGesture {
                     withAnimation(.spring()){
-                        showPorfolio.toggle()
+                        showPortfolio.toggle()
                     }
                 }
         }
