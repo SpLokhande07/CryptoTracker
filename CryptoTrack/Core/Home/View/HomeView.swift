@@ -17,12 +17,8 @@ struct HomeView: View {
             Color.theme.background.ignoresSafeArea()
             VStack{
                homeHeader
-                Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
-                
+                Spacer(minLength: null)
             }
-            //content layer
-           
-            
         }
     }
 }
