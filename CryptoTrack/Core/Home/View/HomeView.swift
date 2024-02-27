@@ -9,16 +9,15 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State private var showPorfolio: Bool = false
+    @State private var showPortfolio: Bool = false
     
     var body: some View {
         ZStack{
             // background layer
             Color.theme.background.ignoresSafeArea()
-            //content layer
             VStack{
                homeHeader
-                Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
+                Spacer(minLength: null)
             }
         }
     }
