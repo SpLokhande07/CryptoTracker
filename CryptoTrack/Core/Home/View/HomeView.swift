@@ -16,9 +16,9 @@ struct HomeView: View {
             // background layer
             Color.theme.background.ignoresSafeArea()
             VStack{
-                homeHeader
+               homeHeader
+                Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
                 
-                Spacer(minLength: 0)
             }
             //content layer
            
@@ -32,29 +32,31 @@ struct HomeView: View {
         HomeView().navigationBarHidden(true)
 }}
 
+
 extension HomeView {
+    
+    
+    
     private var homeHeader: some View{
-        
-            HStack{
-                CircleButtonView(iconName: showPortfolio ? "plus": "info").animation(.none)
-                    .background(CircleButtonAnimationView(animate: $showPortfolio))
-                Spacer()
-                Text(showPortfolio ? "Portfolio" : "Live Prices")
-                    .font(.headline)
-                    .fontWeight(.heavy)
-                    .foregroundColor(Color.theme.accent)
-                    .animation(.none)
-                Spacer()
-                CircleButtonView(iconName: "chevron.right")
-                    .rotationEffect(Angle(degrees: showPortfolio ? 180 : 0))
-                    .onTapGesture {
-                        withAnimation(.spring()){
-                            showPortfolio.toggle()
-                        }
+        HStack{
+            CircleButtonView(iconName: showPorfolio ? "plus": "info").animation(.none)
+                .background(
+                CircleButtonAnimationView(animate: $showPorfolio))
+            Spacer()
+            Text(showPorfolio ? "Portfolio" : "Live Prices")
+                .font(.headline)
+                .fontWeight(.heavy)
+                .foregroundColor(Color.theme.accent)
+                .animation(.none)
+            Spacer()
+            CircleButtonView(iconName: "chevron.right")
+                .rotationEffect(Angle(degrees: showPorfolio ? 180 : 0))
+                .onTapGesture {
+                    withAnimation(.spring()){
+                        showPorfolio.toggle()
                     }
-            }
-//                Text("Header")
-           
-        
+                }
+        }
+        .padding()
     }
 }
