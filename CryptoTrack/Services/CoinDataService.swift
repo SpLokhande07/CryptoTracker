@@ -11,7 +11,7 @@ class CoinDataService {
     @Published var allCoins : [CoinModel] = []
     
     init(){
-        getCoins()
+        getCoins()  
     }
     
     private func getCoins(){
@@ -20,7 +20,5 @@ class CoinDataService {
         
         URLSession.shared.dataTaskPublisher(for: url)
             .subscribe(on: DispatchQueue.global(qos: .default))
-            
     }
-    
 }
