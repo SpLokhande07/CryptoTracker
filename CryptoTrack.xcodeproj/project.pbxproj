@@ -73,6 +73,7 @@
 		327CCC702B8BB114008ACECE /* CryptoTrack */ = {
 			isa = PBXGroup;
 			children = (
+				32EE7DDC2BB4437200D9DC6C /* Services */,
 				505BCD542B8CC0D20074245D /* Network */,
 				505BCD512B8CBDF60074245D /* Models */,
 				327CCC822B8BB673008ACECE /* Core */,
@@ -155,6 +156,14 @@
 			path = CircleButton;
 			sourceTree = "<group>";
 		};
+		32EE7DDC2BB4437200D9DC6C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				328836A22B94CBA40039B511 /* CoinDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		505BCD512B8CBDF60074245D /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				321AD94A2B936F5200F2E8E8 /* ApiCalls.swift */,
-				328836A22B94CBA40039B511 /* CoinDataService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";

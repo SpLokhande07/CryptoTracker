@@ -50,9 +50,10 @@ class DeveloperPreview {
        atl: 67.81,
        atlChangePercentage: 90020.24075,
        atlDate: "2013-07-06T00:00:00.000Z",
-       roi: 12.2,
+       roi: Roi(
+       currency: "10", percentage: 10, times: 4),
        lastUpdated: "2021-03-13T23:18:10.268Z",
-       sparkline7d: SparklineIn7D(prices: [
+       sparklineIn7d: SparklineData(price: [
         54019.26878317463,
         53718.060935791524,
         53677.12968669343,
