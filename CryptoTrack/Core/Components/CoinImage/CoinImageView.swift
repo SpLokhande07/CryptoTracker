@@ -8,36 +8,37 @@
 import SwiftUI
 import Combine
 
-class CoinImageViewModel: ObservableObject {
-    
-    @Published var image: UIImage? = nil
-    
-    private let coin: CoinModel
-    
-    private var cancellable: AnyCancellable?
-    
-    init(coin: CoinModel) {
-        self.coin = coin
-        downloadCoinImage()
-    }
-    
-    private func downloadCoinImage(){
-        guard let url = URL(string: coin.symbol ?? "") else { return }
-        
-        cancellable = NetworkingManager.download(url: url)
-            .sink(receiveCompletion: NetworkingManager.handleCompletion(completion:)) { [weak self] (data) in
-                guard let self = self else { return }
-                self.image = UIImage(data: data)
-            }
-    }
-}
 
 struct CoinImageView: View {
+     
+    @StateObject var vm : CoinImageViewModel
+    
+    
+    init(coin:  CoinModel) {
+        _vm = StateObject(wrappedValue: CoinImageViewModel(coin: coin))
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            if let image = vm.image {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFit()
+            }
+                else if vm.isLoading {
+                    ProgressView()
+                }
+            else {
+                Image(systemName: "questionmark")
+                    .foregroundColor(Color.theme.secondaryTextColor)
+            
+            }
+        }
     }
 }
 
-#Preview {
-    CoinImageView()
-}
+struct CoinImageView_Previews: PreviewProvider {
+   static var previews: some View{ CoinImageView(coin: dev.coin)
+        .padding()
+        .previewLayout(.sizeThatFits)
+}}
