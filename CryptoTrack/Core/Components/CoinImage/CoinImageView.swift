@@ -25,13 +25,12 @@ struct CoinImageView: View {
                     .resizable()
                     .scaledToFit()
             }
-                else if vm.isLoading {
-                    ProgressView()
-                }
+            else if vm.isLoading {
+                ProgressView()
+            }
             else {
                 Image(systemName: "questionmark")
                     .foregroundColor(Color.theme.secondaryTextColor)
-            
             }
         }
     }
