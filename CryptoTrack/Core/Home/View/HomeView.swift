@@ -27,8 +27,8 @@ struct HomeView: View {
                         .foregroundColor(Color.theme.secondaryTextColor)
                 }
                 if !showPortfolio {
-               allCoinsList
-                    .transition(.move(edge: .leading))
+                    allCoinsList
+                        .transition(.move(edge: .leading))
                 }
                 
                 if showPortfolio {

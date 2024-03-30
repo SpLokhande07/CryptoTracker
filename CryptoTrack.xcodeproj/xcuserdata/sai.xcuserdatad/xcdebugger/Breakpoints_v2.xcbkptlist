@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "980B8C87-13FF-4EE4-A7C8-34A26536E3DC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CryptoTrack/Services/CoinDataService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "getCoins()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "980B8C87-13FF-4EE4-A7C8-34A26536E3DC - 26cd034399b0b66e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; Foundation.Data in CryptoTrack.CoinDataService.getCoins() -&gt; ()"
-                  moduleName = "CryptoTrack"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sai/my_projects/swifUI/CryptoTrack/CryptoTrack/Services/CoinDataService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "676">
-               </Location>
-               <Location
-                  uuid = "980B8C87-13FF-4EE4-A7C8-34A26536E3DC - 26cd034399b0b66e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; Foundation.Data in CryptoTrack.CoinDataService.getCoins() -&gt; ()"
-                  moduleName = "CryptoTrack"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sai/my_projects/swifUI/CryptoTrack/CryptoTrack/Services/CoinDataService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "824">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "F40B7806-D697-4D47-9AA6-56D0E8AB1799"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -62,58 +14,10 @@
             filePath = "CryptoTrack/Services/CoinDataService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "getCoins()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6FBC433A-CEB8-4FC9-ADD6-0561278B01D3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CryptoTrack/Services/CoinDataService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "getCoins()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6FBC433A-CEB8-4FC9-ADD6-0561278B01D3 - 26cd034399b0b631"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; Foundation.Data in CryptoTrack.CoinDataService.getCoins() -&gt; ()"
-                  moduleName = "CryptoTrack"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sai/my_projects/swifUI/CryptoTrack/CryptoTrack/Services/CoinDataService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "284">
-               </Location>
-               <Location
-                  uuid = "6FBC433A-CEB8-4FC9-ADD6-0561278B01D3 - 26cd034399b0b631"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; Foundation.Data in CryptoTrack.CoinDataService.getCoins() -&gt; ()"
-                  moduleName = "CryptoTrack"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sai/my_projects/swifUI/CryptoTrack/CryptoTrack/Services/CoinDataService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "464">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -126,8 +30,8 @@
             filePath = "CryptoTrack/Services/CoinDataService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "getCoins()"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,8 +46,8 @@
             filePath = "CryptoTrack/Services/CoinDataService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "getCoins()"
             landmarkType = "7">
          </BreakpointContent>
@@ -158,8 +62,8 @@
             filePath = "CryptoTrack/Services/CoinDataService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "getCoins()"
             landmarkType = "7">
          </BreakpointContent>
