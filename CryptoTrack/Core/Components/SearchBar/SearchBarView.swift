@@ -25,11 +25,7 @@ struct SearchBarView: View {
                     .onTapGesture {
                         UIApplication.shared.endEdting()
                         searchText = ""
-                    }
-                         
-                         
-                         
-                         , alignment: .trailing)
+                    }, alignment: .trailing)
         }
         .font(.headline)
         .padding()
