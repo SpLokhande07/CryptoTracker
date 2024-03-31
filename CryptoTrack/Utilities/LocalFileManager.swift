@@ -62,6 +62,4 @@ class LocalFileManager {
         else {return nil }
         return url.appendingPathComponent(name)
     }
-    
-    
 }
